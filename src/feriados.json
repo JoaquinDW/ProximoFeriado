@@ -1,0 +1,69 @@
+{
+  "feriados": [
+    {
+      "fecha": "2023-01-01",
+      "nombre": "Año Nuevo",
+      "efemerides": "Inicio del año civil."
+    },
+    {
+      "fecha": "2023-03-24",
+      "nombre": "Día Nacional de la Memoria por la Verdad y la Justicia",
+      "efemerides": "Conmemora a las víctimas de la última dictadura militar en Argentina (1976-1983)."
+    },
+    {
+      "fecha": "2023-04-02",
+      "nombre": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+      "efemerides": "Rinde homenaje a los veteranos y caídos en la Guerra de las Malvinas en 1982."
+    },
+    {
+      "fecha": "2023-05-01",
+      "nombre": "Día del Trabajador",
+      "efemerides": "Celebración internacional del Día del Trabajo y los derechos laborales."
+    },
+    {
+      "fecha": "2023-05-25",
+      "nombre": "Día de la Revolución de Mayo",
+      "efemerides": "Conmemora la Revolución de Mayo de 1810, inicio del proceso de independencia de Argentina."
+    },
+    {
+      "fecha": "2023-06-17",
+      "nombre": "Paso a la Inmortalidad del General Martín Miguel de Güemes",
+      "efemerides": "Homenaje al general Güemes, héroe de la Guerra de Independencia y defensor del noroeste argentino."
+    },
+    {
+      "fecha": "2023-06-20",
+      "nombre": "Día de la Bandera",
+      "efemerides": "En honor a Manuel Belgrano, creador de la bandera argentina."
+    },
+    {
+      "fecha": "2023-07-09",
+      "nombre": "Día de la Independencia",
+      "efemerides": "Celebra la declaración de independencia de Argentina el 9 de julio de 1816."
+    },
+    {
+      "fecha": "2023-08-17",
+      "nombre": "Paso a la Inmortalidad del General José de San Martín",
+      "efemerides": "Rinde homenaje al prócer argentino José de San Martín, figura clave en la independencia de América del Sur."
+    },
+    {
+      "fecha": "2023-10-12",
+      "nombre": "Día del Respeto a la Diversidad Cultural",
+      "efemerides": "Conmemora la llegada de Cristóbal Colón a América y promueve el respeto por la diversidad cultural."
+    },
+    {
+      "fecha": "2023-11-20",
+      "nombre": "Día de la Soberanía Nacional",
+      "efemerides": "Recuerda la Batalla de la Vuelta de Obligado en 1845, donde Argentina defendió su soberanía."
+    },
+    {
+      "fecha": "2023-12-08",
+      "nombre": "Inmaculada Concepción de María",
+      "efemerides": "Celebración católica que conmemora la concepción sin pecado original de la Virgen María."
+    },
+    {
+      "fecha": "2023-12-25",
+      "nombre": "Navidad",
+      "efemerides": "Celebración del nacimiento de Jesús según la tradición cristiana."
+    }
+  ]
+}
