@@ -8,13 +8,15 @@
 }
 body{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: url(./assets/wave.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   min-height: 100vh;
   z-index: 10;
+
+
+    
 }
+
+
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

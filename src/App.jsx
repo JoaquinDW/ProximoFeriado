@@ -1,4 +1,3 @@
-import "./App.css";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -135,7 +134,7 @@ function App() {
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 
       setTimeRemaining({ days, hours, minutes });
-    }, 60000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [nextHoliday]);
@@ -146,27 +145,23 @@ function App() {
     }
 
     const { days, hours, minutes } = timeRemaining;
-    console.log(timeRemaining);
 
     return (
-      <div className="flex flex-col text-[#1B1C1E] ">
-        <p className="text-[95px] font-medium">
-          <span className="text-[100px] font-semibold text-purple-700 leading-none overflow-auto">
-            {days}
+      <div className="flex flex-col text-gray-50 ">
+        <p className="text-[95px] font-medium ">
+          <span className="text-[100px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto ">
+            {days} días,
           </span>{" "}
-          días,
         </p>
         <p className="text-[95px] font-medium">
-          <span className="text-[100px] font-semibold text-purple-700 leading-none">
-            {hours}
+          <span className="text-[100px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
+            {hours} horas,
           </span>{" "}
-          horas,
         </p>
         <p className="text-[95px] font-medium">
-          <span className="text-[100px] font-semibold text-purple-700 leading-none">
-            {minutes}
+          <span className="text-[100px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
+            {minutes} minutos.
           </span>{" "}
-          minutos.
         </p>
       </div>
     );
@@ -188,8 +183,8 @@ function App() {
     );
 
     return (
-      <div className="text-[#1B1C1E]">
-        <h1 className="text-4xl font-bold text-center p-4">
+      <div className="text-gray-50 ">
+        <h1 className="text-4xl font-bold text-center">
           Faltan {timeRemaining && timeRemaining.days} días para el próximo
           feriado
         </h1>
@@ -212,13 +207,13 @@ function App() {
 
           <div className=" text-center text-2xl font-medium flex flex-col justify-center leading-8 rounded-md ">
             <h3>{nextHolidayDate}</h3>
-            <h2>{nextHoliday.nombre}</h2>
+            <h2 className="underline">{nextHoliday.nombre}</h2>
             <h4 className="pt-4">{nextHoliday.efemerides}</h4>
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <p className="max-w-[1000px] text-center text-xl font-normal flex justify-center">
+        <div className="flex justify-center ">
+          <p className="max-w-[1000px] text-center text-2xl font-normal flex justify-center mt-10 mb-4">
             {nextHoliday.significado_historico}
           </p>
         </div>
@@ -226,7 +221,13 @@ function App() {
     );
   };
 
-  return <div className="max-w-screen">{renderNextHolidayDetails()}</div>;
+  return (
+    <div className=" min-h-screen flex justify-center items-center ">
+      <div className="border-2 border-white p-1 mx-4  border-dashed">
+        {renderNextHolidayDetails()}
+      </div>
+    </div>
+  );
 }
 
 export default App;
