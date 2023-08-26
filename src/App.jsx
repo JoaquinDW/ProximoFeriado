@@ -147,19 +147,19 @@ function App() {
     const { days, hours, minutes } = timeRemaining;
 
     return (
-      <div className="flex flex-col text-gray-50 ">
-        <p className="text-[95px] font-medium ">
-          <span className="text-[100px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto ">
+      <div className="flex flex-col text-gray-50">
+        <p className="text-[95px] font-medium text-center md:text-center">
+          <span className="md:text-[95px] text-[75px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
             {days} días,
           </span>{" "}
         </p>
-        <p className="text-[95px] font-medium">
-          <span className="text-[100px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
+        <p className="text-[95px] font-medium text-center md:text-center">
+          <span className="md:text-[95px] text-[75px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
             {hours} horas,
           </span>{" "}
         </p>
-        <p className="text-[95px] font-medium">
-          <span className="text-[100px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
+        <p className="text-[95px] font-medium text-center md:text-center">
+          <span className="md:text-[95px] text-[75px] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-none overflow-auto">
             {minutes} minutos.
           </span>{" "}
         </p>
@@ -184,7 +184,7 @@ function App() {
 
     return (
       <div className="text-gray-50 ">
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-4xl font-bold text-center md:m-0 m-2">
           Faltan {timeRemaining && timeRemaining.days} días para el próximo
           feriado
         </h1>
@@ -212,8 +212,8 @@ function App() {
           </div>
         </div>
 
-        <div className="flex justify-center ">
-          <p className="max-w-[1000px] text-center text-2xl font-normal flex justify-center mt-10 mb-4">
+        <div className="flex justify-center">
+          <p className="md:max-w-[1000px] w-full text-center md:text-2xl text-xl font-normal mt-10 mb-4">
             {nextHoliday.significado_historico}
           </p>
         </div>
@@ -222,8 +222,8 @@ function App() {
   };
 
   return (
-    <div className=" min-h-screen flex justify-center items-center ">
-      <div className="border-2 border-white p-1 mx-4  border-dashed">
+    <div className=" min-h-screen flex justify-center items-center  ">
+      <div className="border-2 border-white p-1 mx-4  border-dashed md:mx-0">
         {renderNextHolidayDetails()}
       </div>
     </div>
